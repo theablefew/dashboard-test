@@ -93,7 +93,7 @@
   </div>
 </div>
 
-<div id="one">
+<div id="one" class="split split-horizontal">
 <div class="hr-divider m-t m-b-md">
   <h3 class="hr-divider-content hr-divider-heading">Quick stats</h3>
 </div>
@@ -432,7 +432,7 @@
   </div>
 </div>
 </div>
-<div id="two">
+<div id="two" class="split split-horizontal">
 <div class="hr-divider m-t m-b-md">
   <h3 class="hr-divider-content hr-divider-heading">Quick stats</h3>
 </div>
@@ -783,8 +783,8 @@
     <script>
       // execute/clear BS loaders for docs
       $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
-      Split(['#one', '#two'], {
-        direction: 'vertical'
+      $(document).ready(function() {
+        Split(['#one', '#two']);
       });
     </script>
   </body>
